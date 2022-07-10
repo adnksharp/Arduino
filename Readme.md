@@ -5,6 +5,7 @@
 Proyectos que desarrollé en Arduino:
 
 ## Índice
+- [Software](#software)
 - [Señales digitales](#señales-digitales)
     - [Salidas digitales](#salidas-digitales)
         - [Blink](#blink)
@@ -29,6 +30,12 @@ Proyectos que desarrollé en Arduino:
         - [Sensor de temperatura](#sensor-de-temperatura)
 - [Extras](#extras)
     - [Serial Event](#serial-event)
+
+## Software
+Para crear proyectos es recomendable usar la [IDE de Arduino](https://www.arduino.cc/en/Main/Software) o [Arduino CLI](https://arduino.github.io/arduino-cli/0.23/installation/#use-the-install-script). En caso de usar Arduino CLI, se deben instalar los [cores de la placa](https://arduino.github.io/arduino-cli/0.23/getting-started/#install-the-core-for-your-board) a usar (en mi caso la placa Arduino Uno, Arduino MEGA 2560 y esp8266):
+```bash
+$ arduino core install esp8266:esp8266 arduino:avr
+```
 
 ## Señales digitales
 Proyectos que manejan entradas y salidas digitales.

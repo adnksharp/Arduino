@@ -13,6 +13,9 @@ Proyectos que desarrollé en Arduino:
         - [Señales de trafico](#señales-de-trafico)
             - [Una señal de trafico](#una-señal-de-trafico)
             - [Varias señales de trafico](#varias-señales-de-trafico)
+        - [Circuito de escalera](#circuito-de-escalera)
+        - [Auto fantastico](#auto-fantastico)
+        - [Flux capacitor](#flux-capacitor)
     - [Lectura de entradas](#lectura-de-entradas)
         - [Botones](#botones)
             - [Buttons](#buttons)
@@ -71,6 +74,16 @@ El programa para una señal de trafico funciona para multiples semaforos. Para e
 - Se usa un vector únicamente para las salidas de las señales de trafico de color rojo.
 
 Mientras que en el sketch de una señal de trafico, los catodos de los LEDs de los semaforos se conectan a GND, en el sketch de varias señales de trafico, los catodos de los LEDs de los semaforos se conectan a los pines de salida digitales al igual que los anodos.
+
+
+#### [Circuito de escalera](https://github.com/adnksharp/iSC)
+Sketch para controlar el encendido de un relevador con dos botones.
+
+#### [Auto fantastico](https://github.com/adnksharp/iKRL)
+Simulación de las luces del auto fantastico (Knight Rider).
+
+#### [Flux capacitor](https://github.com/adnksharp/iFC)
+Simulación de la iluminación del flux capacitor de Back to the Future.
 
 ### [Lectura de entradas](https://github.com/adnksharp/iDread/blob/base/DigitalRead)
 Sketch para leer entradas digitales. El programa hace uso de la función `digitalRead` para leer entradas digitales:

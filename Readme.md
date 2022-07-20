@@ -144,4 +144,4 @@ Sketch para leer la temperatura de un sensor de temperatura *TMP36* y la funció
 ## Extras
 
 ### [Serial Event](https://github.com/adnksharp/iSevent)
-Uso de la función `SerialEvent` para manejar la lectura de una entrada del puerto serie.
+Uso de la función [`SerialEvent`](https://www.arduino.cc/reference/en/language/functions/communication/serial/serialevent/) para manejar la lectura de una entrada del puerto serie.

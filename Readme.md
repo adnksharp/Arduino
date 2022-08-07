@@ -2,44 +2,57 @@
 
 [![Trafic-Lights-bb.png](https://i.postimg.cc/KjTWpSXV/Trafic-Lights-bb.png)](https://postimg.cc/m1bVhngN)
 
-Proyectos que desarrollé en Arduino:
+Proyectos de Arduino y nodeMCU ESP8266
 
 ## Índice
-- [Software](#software)
-- [Señales digitales](#señales-digitales)
-    - [Salidas digitales](#salidas-digitales)
+- [Herramientas](#herramientas)
+- [Arduino](#arduino)
+    - [Señales digitales](#señales-digitales)
+        - [Salidas digitales](#salidas-digitales)
+            - [Blink](#blink)
+            - [Display de 7 segmentos](#display-de-7-segmentos)
+            - [Señales de trafico](#señales-de-trafico)
+            - [Circuito de escalera](#circuito-de-escalera)
+            - [Auto fantastico](#auto-fantastico)
+            - [Flux capacitor](#flux-capacitor)
+        - [Lectura de entradas](#lectura-de-entradas)
+            - [Botones](#botones)
+            - [PIR](#pir)
+            - [HC-SR04](#hc-sr04)
+    - [Señales analógicas](#señales-analógicas)
+        - [Salidas analógicas](#salidas-analógicas)
+            - [PWM](#salidas-pwm)
+            - [Servo](#servo)
+            - [L293D](#l293d)
+        - [Lectura de entradas](#lectura-de-entradas)
+            - [Potenciómetro](#potenciómetro)
+            - [Sensores](#sensores)
+            - [Sensor de temperatura](#sensor-de-temperatura)
+    - [Extras](#extras)
+        - [Serial Event](#serial-event)
+- [nodeMCU ESP8266](#nodemcu-esp8266)
+    - [Basico](#basico)
         - [Blink](#blink)
-        - [Display de 7 segmentos](#display-de-7-segmentos)
-        - [Señales de trafico](#señales-de-trafico)
-            - [Una señal de trafico](#una-señal-de-trafico)
-            - [Varias señales de trafico](#varias-señales-de-trafico)
-        - [Circuito de escalera](#circuito-de-escalera)
-        - [Auto fantastico](#auto-fantastico)
-        - [Flux capacitor](#flux-capacitor)
-    - [Lectura de entradas](#lectura-de-entradas)
-        - [Botones](#botones)
-            - [Buttons](#buttons)
-            - [Counter](#counter)
-        - [PIR](#pir)
-        - [HC-SR04](#hc-sr04)
-- [Señales analógicas](#señales-analógicas)
-    - [Salidas analógicas](#salidas-analógicas)
-        - [PWM](#salidas-pwm)
-        - [Servo](#servo)
-        - [L293D](#l293d)
-    - [Lectura de entradas](#lectura-de-entradas)
-        - [Potenciómetro](#potenciómetro)
-        - [Sensores](#sensores)
-        - [Sensor de temperatura](#sensor-de-temperatura)
-- [Extras](#extras)
-    - [Serial Event](#serial-event)
+        - [Entrada analógica](#entrada-analógica)
+        - [Funciones](#funciones)
+        - [Pantalla OLED](#pantalla-oled)
+        - [Puerto serie](#puerto-serie)
+    - [Servidor web](#servidor-web)
+        - [Crear un punto de acceso](#crear-un-punto-de-acceso)
+        - [Unirse a un punto de acceso](#unirse-a-un-punto-de-acceso)
+        - [Salida analógica](#salida-analógica)
+    - [Microcotroladores por puerto serie](#microcontroladores-por-puerto-serie)
 
-## Software
-Para crear proyectos es recomendable usar la [IDE de Arduino](https://www.arduino.cc/en/Main/Software) o [Arduino CLI](https://arduino.github.io/arduino-cli/0.23/installation/#use-the-install-script). En caso de usar Arduino CLI, se deben instalar los [cores de la placa](https://arduino.github.io/arduino-cli/0.23/getting-started/#install-the-core-for-your-board) a usar (en mi caso la placa Arduino Uno, Arduino MEGA 2560 y esp8266):
-```bash
-$ arduino core install esp8266:esp8266 arduino:avr
-```
 
+# Herramientas
+Hardware y software utilizados:
+- Microcontrolador: 
+    - Arduino Uno o Mega 2560
+    - NodeMCU ESP8266 V2 o V3
+- IDE:
+    - [Arduino](https://www.arduino.cc/en/Main/Software) o [VS Code](https://code.visualstudio.com/download) + [Arduino CLI](https://arduino.github.io/arduino-cli/0.23/installation/#use-the-install-script) + [python-pyserial](https://pypi.org/project/pySerial/) 
+
+# Arduino
 ## Señales digitales
 Proyectos que manejan entradas y salidas digitales.
 
@@ -145,3 +158,37 @@ Sketch para leer la temperatura de un sensor de temperatura *TMP36* y la funció
 
 ### [Serial Event](https://github.com/adnksharp/iSevent)
 Uso de la función [`SerialEvent`](https://www.arduino.cc/reference/en/language/functions/communication/serial/serialevent/) para manejar la lectura de una entrada del puerto serie.
+
+# nodeMCU ESP8266
+## Basico
+Proyectos disponibles para el nodemcu ESP8266 y Arduino.
+
+### [Blink](https://github.com/adnksharp/eBlink)
+Sketch para encender un LED y apagarlo. En el caso del nodeMCU, el sketch permite manejar el LED integrado en el nodemcu.
+
+### [Entrada analógica](https://github.com/adnksharp/eAnalog)
+Manejo de la función `analogRead` para leer entradas analógicas.
+
+### [Funciones](https://github.com/adnksharp/eFunctions)
+Creación de funciones dentro de un Archivo de Arduino y un Archivo de C++ para controlar salidas digitales.
+
+### [Pantalla OLED](https://github.com/adnksharp/eOLED)
+Sketch para manejar una pantalla OLED por i2c.
+
+### [Puerto serie](https://github.com/adnksharp/ieSerial)
+Sketch para comunicar microcontroladores por puerto serie.
+
+## Servidor web
+Proyectos usando librerias de servidor web para el nodemcu ESP8266.
+
+### [Crear un punto de acceso](https://github.com/adnksharp/eAP)
+Crear un AP con una dirección IP y una contraseña.
+
+### [Unirse a un punto de acceso](https://github.com/adnksharp/eLServer)
+Unirse a un punto de acceso creado previamente y crear un servidor web.
+
+### [Salida analógica](https://github.com/adnksharp/eLSPWM)
+Crear un servidor web http para manejar una salida analógica.
+
+## [Microcontroladores por puerto serie](https://github.com/adnksharp/ieSerial)
+Proyectos para comunicar microcontroladores por puerto serie.

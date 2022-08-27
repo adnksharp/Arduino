@@ -51,6 +51,14 @@ Hardware y software utilizados:
     - NodeMCU ESP8266 V2 o V3
 - IDE:
     - [Arduino](https://www.arduino.cc/en/Main/Software) o [VS Code](https://code.visualstudio.com/download) + [Arduino CLI](https://arduino.github.io/arduino-cli/0.23/installation/#use-the-install-script) + [python-pyserial](https://pypi.org/project/pySerial/) 
+- Librerías:
+    - `Servo`
+    - `Wire`
+    - `Adafruit_GFX`
+    - `Adafruit_SSD1306`
+    - `ESP8266WiFi`
+    - `WiFiClient`
+    - `ESP8266WebServer`
 
 # Arduino
 ## Señales digitales

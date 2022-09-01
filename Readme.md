@@ -1,6 +1,6 @@
 # Proyectos de Arduino
 
-[![Trafic-Lights-bb.png](https://i.postimg.cc/KjTWpSXV/Trafic-Lights-bb.png)](https://postimg.cc/m1bVhngN)
+[![displays.png](https://i.postimg.cc/mgWKHGX5/displays.png)](https://postimg.cc/2VT0sgfQ)
 
 Proyectos de Arduino y nodeMCU ESP8266
 
